@@ -6,7 +6,7 @@
 /*   By: apena-ba <apena-ba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 12:46:10 by apena-ba          #+#    #+#             */
-/*   Updated: 2022/10/12 12:57:26 by apena-ba         ###   ########.fr       */
+/*   Updated: 2022/10/12 14:08:24 by apena-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,8 @@ int	main(int argc, char **argv)
 	if (philo_init(&info))
 		return (1);
 	action(&info);
+	free(info.philo);
+	sem_unlink("/forks");
+	sem_unlink("/writing");
 	return (0);
 }

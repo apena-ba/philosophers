@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils2.c                                           :+:      :+:    :+:   */
+/*   utils2_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apena-ba <apena-ba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 15:27:55 by apena-ba          #+#    #+#             */
-/*   Updated: 2022/10/11 22:41:19 by apena-ba         ###   ########.fr       */
+/*   Updated: 2022/10/13 12:11:46 by apena-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philo.h"
+#include "philo_bonus.h"
 
-int		print_action(t_philo *philo, const char *s)
+int	print_action(t_philo *philo, const char *s)
 {
 	long long	time;
 
@@ -25,7 +25,7 @@ int		print_action(t_philo *philo, const char *s)
 		printf("%lli Philo %d %s", time, philo->index + 1, s);
 		sem_post(philo->info->writing);
 	}
-	return(0);
+	return (0);
 }
 
 long long	get_time(void)

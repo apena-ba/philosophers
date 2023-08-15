@@ -2,6 +2,8 @@
 Concurrency philosophers problem in C
 
 Philosophers problem explanation:
+
+
 [![Project Video](https://img.youtube.com/vi/FYUi-u7UWgw/0.jpg)](https://www.youtube.com/watch?v=FYUi-u7UWgw)
 
 ## Description
